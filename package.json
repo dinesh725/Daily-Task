@@ -2,13 +2,13 @@
   "name": "task",
   "version": "1.0.0",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./styles.css -o ./dist/output.css --minify",
-    "watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
-    "start": "node server.js",
-    "vercel-build": "npm run build"
-  },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "tailwindcss -i ./styles.css -o ./dist/output.css --minify && cp index.html dist/",
+  "watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
+  "start": "node server.js",
+  "vercel-build": "npm run build"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

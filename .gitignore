@@ -17,7 +17,7 @@ Thumbs.db
 .DS_Store
 
 # Build outputs
-dist/
+
 build/
 
 # Temporary files

@@ -6,11 +6,11 @@
       "use": "@vercel/node"
     },
     {
-      "src": "dist/**",
+      "src": "dist/index.html",
       "use": "@vercel/static"
     },
     {
-      "src": "*.html",
+      "src": "dist/(.*)",
       "use": "@vercel/static"
     }
   ],
@@ -20,18 +20,8 @@
       "dest": "server.js"
     },
     {
-      "src": "/dist/(.*)",
-      "dest": "dist/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "favicon.ico"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "/dist/$1"
     }
-  ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  ]
 }
