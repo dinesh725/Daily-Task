@@ -16,8 +16,13 @@
       "dest": "server.js"
     },
     {
+      "src": "/dist/(.*)",
+      "dest": "/dist/$1"
+    },
+    {
       "src": "/",
       "dest": "index.html"
     }
-  ]
+  ],
+  "buildCommand": "npm run build"
 }

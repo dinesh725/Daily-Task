@@ -14,6 +14,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.static('.')); // Serve static files from the root directory
+app.use('/dist', express.static('dist')); // Serve static files from the dist directory
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, {

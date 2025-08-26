@@ -152,7 +152,7 @@ This project is configured to be deployed to Vercel as a single deployment with 
    - `EMAIL_FROM`: Sender email address
 4. Deploy the project
 
-The `vercel.json` file is already configured to build both the Node.js backend and serve the static frontend files.
+The `vercel.json` file is already configured to build both the Node.js backend and serve the static frontend files. Vercel will automatically run `npm run build` to generate the CSS file during deployment.
 
 ## Contributing
 1. Fork the repository
